@@ -7,7 +7,7 @@ function IngredientList(props, Item) {
     //Object.values()??
     return (
         <ul>
-
+        <Item>{ingredient}: {measure}</Item>
         </ul>
     )
 }

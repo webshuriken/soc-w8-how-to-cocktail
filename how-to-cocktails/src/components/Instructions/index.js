@@ -1,8 +1,8 @@
 import React from "react";
 
-function Instructions(props) {
+function Instructions({instructions}) {
     return (
-        <p>{props.strInstructions}</p>
+        <p>{instructions}</p>
     )
 }
 

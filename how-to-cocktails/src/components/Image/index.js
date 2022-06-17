@@ -1,8 +1,8 @@
 import React from "react";
 
-function Image(props) {
+function Image({image}) {
     return (
-        <img src={props.drinks.strDrinkThumb} alt={props.drinks.strDrink}/>
+        <img src={image} alt="text" height="300" width="500"/>
     )
 }
 

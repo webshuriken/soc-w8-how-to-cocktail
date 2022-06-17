@@ -2,9 +2,9 @@ import React from "react";
 
 //this needs to display both object values from mapped function
 
-function Item(props) {
+function Item({ingredient, measure}) {
     return (
-        <p>{props.strIngredient}: {props.strMeasure}</p>
+        <p>{ingredient}: {measure}</p>
     )
 }
 
