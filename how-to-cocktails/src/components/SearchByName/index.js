@@ -8,6 +8,12 @@ function SearchByName({handleClick}) {
     setText(e.target.value);
   }
 
+  async function fetchAPI() {
+    const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${text}`);
+    const data = await response.json();
+    handleClick(data.drinks);
+  }
+
   return (
     <div>
       <label htmlFor="search-by-name">
@@ -16,7 +22,7 @@ function SearchByName({handleClick}) {
       </label>
       <button onClick={() => {
         if (text !== '') {
-          handleClick(text)
+          fetchAPI()
         }
       }}>Search</button>
     </div>

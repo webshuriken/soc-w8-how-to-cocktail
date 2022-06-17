@@ -1,8 +1,8 @@
 import './App.css';
 import {useState, useEffect} from 'react';
-//import RandomSearch from '../RandomSearch';
-import Image from '../Image';
-import Instructions from '../Instructions';
+import DisplayCocktail from '../DisplayCocktail';
+import RandomSearch from '../RandomSearch';
+import SearchByName from '../SearchByName';
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
 console.log(cocktails[0])
 
   function updateCocktail(drink) {
+    console.log(drink)
     setCocktails(drink);
   }
 
@@ -25,13 +26,10 @@ console.log(cocktails[0])
 
   return (
     <div className="App">
+      <SearchByName handleClick={updateCocktail} />
+      <RandomSearch handleClick={updateCocktail} />
       <h1>HOW TO COCKTAILS</h1>
-      {cocktails[0] !== undefined &&
-      <div>
-      <Image src={cocktails[0].strDrinkThumb}/>
-      <Instructions instructions={cocktails[0].strInstructions} />
-      </div>}
-      {/* <RandomSearch handleClick={updateCocktail} /> */}
+      {cocktails[0] !== undefined && <DisplayCocktail cocktail={cocktails[0]} />}
     </div>
   );
 }

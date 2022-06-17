@@ -7,17 +7,17 @@ function DisplayCocktail({cocktail, updateCocktail}) {
   const ingredient = [];
   const measure = [];
   for (let i = 1; i <= 15; i++) {
-    if (cocktail[`strIngredients${i}`] !== null) {
-      ingredient.push(cocktail[`strIngredients${i}`]);
-      measure.push(cocktail[`strIngredients${i}`]);
+    if (cocktail[`strIngredient${i}`] !== null) {
+      ingredient.push(cocktail[`strIngredient${i}`]);
+      measure.push(cocktail[`strMeasure${i}`]);
     }
   }
 
   return (
     <section className="cocktail">
-      <h1>cocktail.strDrink</h1>
-      <Image image={cocktail.srtDrinkThumb} />
-      <IngredientList ingredient={ingredient} measure={measure} />
+      <h1>{cocktail.strDrink}</h1>
+      <Image src={cocktail.strDrinkThumb} />
+      {/* <IngredientList ingredient={ingredient} measure={measure} /> */}
       <Instructions instructions={cocktail.strInstructions} />
     </section>
   );

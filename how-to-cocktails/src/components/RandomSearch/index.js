@@ -5,7 +5,7 @@ function RandomSearch({handleClick}) {
   async function fetchAPI() {
     const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php');
     const data = await response.json();
-    handleClick(data);
+    handleClick(data.drinks);
   }
 
   return (
