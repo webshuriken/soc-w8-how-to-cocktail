@@ -8,7 +8,7 @@ import Instructions from '../Instructions';
 function App() {
   const [cocktails, setCocktails] = useState([]);
 
-console.log(cocktails[0].strIngredient3)
+console.log(cocktails[0])
 
   function updateCocktail(drink) {
     setCocktails(drink);

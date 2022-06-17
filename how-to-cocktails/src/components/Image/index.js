@@ -1,8 +1,8 @@
 import React from "react";
 
-function Image({image}) {
+function Image({src}) {
     return (
-        <img src={image} alt="text" height="300" width="500"/>
+        <img src={src} alt="text" height="300" width="500"/>
     )
 }
 
