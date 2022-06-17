@@ -27,10 +27,12 @@ For MVP only one state of cocktail to change on each URI request
 app 
 Cocktail State
 
-SearchByName second state here
+SearchByName second state (name) here 
+handleClick to shange name query to updated state in fetch request update cocktail state
 RandomSearch
+handleClick fetch request update cocktail state
 
-DisplayCocktail 
+DisplayCocktail Cocktail State props passed down
   CocktailName
   Image
   IngredientList
