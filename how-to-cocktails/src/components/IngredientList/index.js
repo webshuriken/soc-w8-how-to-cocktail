@@ -1,20 +1,17 @@
 import React from "react";
 import Item from "../Item";
 
-function IngredientList(props, Item) {
-    //loop or map through props.drinks.strIngredient1-15 & props.drinks.strIngredient1-15
-    //if value of either at [i] is not != null return it in Item
-    //Object.values()??
+function IngredientList({ingredient, measure}) {
+    let array = [];
+    for (let i = 1; i <= 15; i++)
+    if (ingredient[i] && measure[i] != null) {
+        array.push(<Item>{ingredient[i]}: {measure[i]}</Item>)
+    }
     return (
         <ul>
-        <Item>{ingredient}: {measure}</Item>
+            {array}
         </ul>
     )
 }
 
 export default IngredientList;
-
-// for (let i = 1; i <= 15; i++)
-// if (drinks[0].strIngredient[i] && drinks[0].strMeasure[i] != null) {
-//     return <Item>{drinks[0][`strIngredient${i}`]}: {drinks[0][`strMeasure${i}`]}</Item>
-// }
