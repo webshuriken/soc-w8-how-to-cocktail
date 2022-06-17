@@ -29,7 +29,9 @@ Cocktail useReducer
 ## DisplayCocktail Cocktail State props passed down
 
 - props
-  cocktailState
+
+  - cocktailState
+  - updateCocktail
 
 - render
 
