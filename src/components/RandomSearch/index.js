@@ -9,7 +9,11 @@ function RandomSearch({handleClick}) {
   }
 
   return (
-    <button onClick={fetchAPI}>RANDOM COCKTAIL</button>
+    <button 
+      className='max-w-sm border-2 border-screaming-green-400 rounded max-sm:mt-1 py-1 px-2'
+      onClick={fetchAPI}
+    >Random Cocktail
+    </button>
   )
 }
 
