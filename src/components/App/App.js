@@ -6,13 +6,13 @@ import SearchByName from '../SearchByName';
 
 
 function App() {
-  const [cocktails, setCocktails] = useState([]);
+  const [cocktails, setCocktails] = useState(undefined);
 
   async function fetchCocktails(path) {
-    console.log("YOU ARE FETCHING");
     const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/${path}`);
     const data = await response.json();
     const drinks = data.drinks[0];
+
     // create a list of ingredients with their measurements
     let cocktailIngredients = [];
     for (let i=1; i < 16; i++) {
@@ -25,13 +25,14 @@ function App() {
         break;
       }
     }
+
     // prep the cocktail info
     const newCocktail = {
       id: drinks.idDrink,
       name: drinks.strDrink,
       isAlcoholic: drinks.strAlcoholic,
       glass: drinks.strGlass,
-      imageSrc: drinks.strImageSource,
+      thumbnail: drinks.strDrinkThumb,
       instructions: drinks.strInstructions,
       ingredients: cocktailIngredients
     }
@@ -40,10 +41,7 @@ function App() {
   }
 
   useEffect(() => {
-    async function fetchAPI() {
-      fetchCocktails('random.php');
-    }
-    fetchAPI();
+    fetchCocktails('random.php');
   }, []);
 
   return (
@@ -56,7 +54,7 @@ function App() {
         </div>
       </header>
       <main className='grow pb-4'>
-      {cocktails[0] !== undefined && <DisplayCocktail cocktail={cocktails[0]} />}
+      {cocktails !== undefined && <DisplayCocktail cocktail={cocktails} />}
       </main>
       <footer>
         <p className="pt-4 pb-2 text-center">All rights reserved 2022-23</p>
