@@ -8,12 +8,6 @@ function SearchByName({handleClick}) {
     setText(e.target.value);
   }
 
-  async function fetchAPI() {
-    const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${text}`);
-    const data = await response.json();
-    handleClick(data.drinks);
-  }
-
   return (
     <div className='flex gap-x-2 max-sm:mb-1'>
       <label className='w-3/4' htmlFor="search-by-name">
@@ -27,7 +21,7 @@ function SearchByName({handleClick}) {
         className='relative grow w1/4 border-2 border-screaming-green-100 rounded-md py-1 px-2 hover:shadow-screaming-green overflow-hidden transition-shadow'
         onClick={() => {
           if (text !== '') {
-            fetchAPI()
+            handleClick(`search.php?s=${text}`)
           }
         }}
       >

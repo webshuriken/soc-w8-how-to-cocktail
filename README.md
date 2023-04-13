@@ -65,7 +65,13 @@ Takes two numbers and returns the sum.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+**large screens**
+
+![App large Screenshot](./assets/screenshot/screenshot-1.png)
+
+**mobile screens**
+
+![App mobile Screenshot](./assets/screenshot/screenshot-2.png)
 
 
 ## Color Reference
@@ -76,7 +82,7 @@ Takes two numbers and returns the sum.
 | Fuchsia | ![#F71FF9](https://via.placeholder.com/10/F71FF9?text=+) #F71FF9 |
 | White | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
 | Screaming green | ![#8FFE6B](https://via.placeholder.com/10/8FFE6B?text=+) #8FFE6B |
-| Dark purple | ![#1F071F](https://via.placeholder.com/10/1F071F?text=+) #1F071F |
+| Licorice | ![#110411](https://via.placeholder.com/10/110411?text=+) #110411 |
 
 
 ## Tech Stack
@@ -110,14 +116,23 @@ Once your MVP is functioning and if you have time left, focus on what features y
 You'll be presenting your apps to each other, and each team member should be prepared to present about their app so an end of day wrap-up is a good idea. This is a good time to practice an [agile retrospective](https://www.atlassian.com/team-playbook/plays/retrospective) - leave time before presentations to discuss what you did well today, what you learned, what you might do differently next time, and actions you can take forward into your project next week.
 
 
+## What I learned
+
+After completing the hackathon with my partner for the week, Jack, I decided to finish off the interface and at the same time experience a new technology. 
+The new technology I chose was [Tailwind](https://tailwindcss.com/) and I am really impressed with it. I have to admind that after my experience with MaterialUI I was reluctand to try it out but they got it right.
+Because of my experience with Bootstrap the learning curve was not steep at all, I just needed to have a quick look at the utilities they offered and how they were used. The library offers really good default settings, which are ready to go and do produce a recent interface, however the ability to create custom utilities is what did it for me. Unlike most, tailwind actually makes it easy and straight forward to add your custom utilities as one offs or in the config file so that it intergrates seemless with the app.
+
+I will start using tailwind in all my projects from now. This does not mean I will close the doors on other libraries made for similar purpose as I will keep on trying out and learning new techs. To me Tailwind is a winner.
+
+
 ## Roadmap
 
-**TODO:**
+- Search for cocktail by ingredients.
 
 
 ## Acknowledgements
 
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [Tailwindcss Documentation](https://tailwindcss.com/docs/installation) to the people involved in the creation and planning. Amazing piece of tech.
 
 
 ## Authors
