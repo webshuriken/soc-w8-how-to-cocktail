@@ -34,33 +34,6 @@ Start the server
   npm start
 ```
 
-**TODO:**
-## API Reference
-
-#### Get all items
-
-```http
-  GET /api/items
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### Get item
-
-```http
-  GET /api/items/${id}
-```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
-
 
 ## Screenshots
 
@@ -82,6 +55,25 @@ Takes two numbers and returns the sum.
 | White | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
 | Screaming green | ![#8FFE6B](https://via.placeholder.com/10/8FFE6B?text=+) #8FFE6B |
 | Licorice | ![#110411](https://via.placeholder.com/10/110411?text=+) #110411 |
+
+
+## API Reference
+
+#### Get a random cocktail
+
+```http
+  GET /api/json/v1/1/random.php
+```
+
+#### Search for specific cocktail
+
+```http
+  GET /api/json/v1/1/search.php?s=${text}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `${text}` | `string` | text to search for |
 
 
 ## Tech Stack
