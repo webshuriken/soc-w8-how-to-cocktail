@@ -18,7 +18,7 @@ function SearchByName({handleClick}) {
     <div className='flex gap-x-2 max-sm:mb-1'>
       <label className='w-3/4' htmlFor="search-by-name">
         <input
-          className='w-full border-2 border-screaming-green-400 rounded mr-1 p-1' 
+          className='w-full border-2 border-screaming-green-400 rounded mr-1 p-1 text-licorice' 
           id="search-by-name" 
           type="text" onChange={handleChange} 
           placeholder='Search by name' />
