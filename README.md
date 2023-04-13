@@ -5,7 +5,6 @@ A cocktails recipe react app, do you want to create your next refreshing drink? 
 
 ## Features
 
-- Light/dark mode toggle
 - Responsive
 
 
@@ -127,6 +126,7 @@ I will start using tailwind in all my projects from now. This does not mean I wi
 
 ## Roadmap
 
+- Light/dark mode toggle
 - Search for cocktail by ingredients.
 
 
