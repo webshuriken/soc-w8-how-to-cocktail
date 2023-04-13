@@ -17,20 +17,23 @@ function SearchByName({handleClick}) {
   return (
     <div className='flex gap-x-2 max-sm:mb-1'>
       <label className='w-3/4' htmlFor="search-by-name">
-        <input
-          className='w-full border-2 border-screaming-green-400 rounded mr-1 p-1 text-licorice' 
+        <input        
+          className='w-full border-2 border-white rounded mr-1 p-1 text-licorice' 
           id="search-by-name" 
           type="text" onChange={handleChange} 
           placeholder='Search by name' />
       </label>
       <button
-        className='grow w1/4 border-2 border-screaming-green-400 rounded py-1 px-2'
+        className='relative grow w1/4 border-2 border-screaming-green-100 rounded-md py-1 px-2 hover:shadow-screaming-green overflow-hidden transition-shadow'
         onClick={() => {
           if (text !== '') {
             fetchAPI()
           }
         }}
-      >Search</button>
+      >
+        <span className='block absolute -inset-0 rounded-sm hover:shadow-inner-screaming-green transition-shadow' aria-hidden="true"></span>
+        Search
+      </button>
     </div>
   );
 }
