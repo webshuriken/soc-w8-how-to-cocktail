@@ -7,7 +7,7 @@ function DisplayCocktail({cocktail}) {
   const {name, isAlcoholic, glass, thumbnail, instructions, ingredients} = cocktail;
 
   return (
-    <section>
+    <section className='max-w-[1212px] mx-auto'>
       <header className='flex'>
         <div className='relative border-t-2 border-r-2 border-l-2 border-cocktail-fuchsia-100 rounded-t-lg shadow-cocktail-fuchsia overflow-hidden'>
           <span className='block absolute -inset-0 rounded-t-md shadow-inner-cocktail-fuchsia' aria-hidden="true"></span>
