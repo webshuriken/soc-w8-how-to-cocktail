@@ -4,8 +4,11 @@ module.exports = {
   theme: {
     boxShadow: {
       'screaming-green': '0 0px 10px 1px rgba(87, 254, 32, 0.4), 0 0px 2px 1px rgba(87, 254, 32, 0.6)',
+      'inner-screaming-green': 'inset 0 0px 10px 1px rgba(87, 254, 32, 0.4), inset 0 0px 2px 1px rgba(87, 254, 32, 0.6)',
       'razzmatazz': '0 0px 10px 1px rgba(243, 23, 112, 0.4), 0 0px 2px 1px rgba(243, 23, 112, 0.6)',
+      'inner-razzmatazz': 'inset 0 0px 10px 1px rgba(243, 23, 112, 0.4), inset 0 0px 2px 1px rgba(243, 23, 112, 0.6)',
       'cocktail-fuchsia': '0 0px 10px 1px rgba(247, 31, 249, 0.4), 0 0px 2px 1px rgba(247, 31, 249, 0.6)',
+      'inner-cocktail-fuchsia': ' inset 0 0px 10px 1px rgba(247, 31, 249, 0.4), inset 0 0px 2px 1px rgba(247, 31, 249, 0.6)',
     },
     extend: {
       colors: {
