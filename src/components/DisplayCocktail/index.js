@@ -1,5 +1,5 @@
 import Image from '../Image';
-import IngredientList from '../IngredientTable';
+import IngredientTable from '../IngredientTable';
 import Instructions from '../Instructions'
 
 
@@ -23,11 +23,7 @@ function DisplayCocktail({cocktail}) {
             src={thumbnail} />
         </div>
         <div className='flex flex-col gap-4 md:w-2/3 text-white'>
-          <div className='relative border-2 border-cocktail-fuchsia-100 rounded-lg p-4 shadow-cocktail-fuchsia overflow-hidden'>
-          <span className='block absolute -inset-0 rounded-md shadow-inner-cocktail-fuchsia' aria-hidden="true"></span>
-            <h3 className='text-shadow-cocktail-fuchsia-neon font-bold'>Ingredients</h3>
-            <IngredientList ingredients={ingredients} />
-          </div>
+          <IngredientTable ingredients={ingredients} />
           <Instructions instructions={instructions} glassType={glass} isAlcoholic={isAlcoholic} />
         </div>
       </div>
