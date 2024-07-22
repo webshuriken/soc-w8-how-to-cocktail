@@ -111,7 +111,7 @@ You'll be presenting your apps to each other, and each team member should be pre
 
 After completing the hackathon with my partner for the week, Jack, I decided to finish off the interface and at the same time experience a new technology. 
 The new technology I chose was [Tailwind](https://tailwindcss.com/) and I am really impressed with it. I have to admind that after my experience with MaterialUI I was reluctand to try it out but they got it right.
-Because of my experience with Bootstrap the learning curve was not steep at all, I just needed to have a quick look at the utilities they offered and how they were used. The library offers really good default settings, which are ready to go and do produce a recent interface, however the ability to create custom utilities is what did it for me. Unlike most, tailwind actually makes it easy and straight forward to add your custom utilities as one offs or in the config file so that it intergrates seemless with the app.
+Because of my experience with Bootstrap the learning curve was not steep at all, I just needed to have a quick look at the utilities they offered and how they were used. The library offers really good default settings, which are ready to go and do produce a decent interface, however the ability to create custom utilities is what did it for me. Unlike most, tailwind actually makes it easy and straight forward to add your custom utilities as one offs or in the config file so that it intergrates seemless with the app.
 
 I will start using tailwind in all my projects from now. This does not mean I will close the doors on other libraries made for similar purpose as I will keep on trying out and learning new techs. To me Tailwind is a winner.
 
