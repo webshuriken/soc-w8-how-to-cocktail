@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/soc-w8-how-to-cocktail/static/css/main.8770360e.css",
+    "main.js": "/soc-w8-how-to-cocktail/static/js/main.48b2a848.js",
+    "index.html": "/soc-w8-how-to-cocktail/index.html",
+    "main.8770360e.css.map": "/soc-w8-how-to-cocktail/static/css/main.8770360e.css.map",
+    "main.48b2a848.js.map": "/soc-w8-how-to-cocktail/static/js/main.48b2a848.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8770360e.css",
+    "static/js/main.48b2a848.js"
+  ]
+}
