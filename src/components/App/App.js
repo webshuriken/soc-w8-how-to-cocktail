@@ -6,12 +6,12 @@ import SearchByName from '../SearchByName';
 
 function App() {
   const [cocktails, setCocktails] = useState(undefined);
+  const date = new Date();
 
   async function fetchCocktails(path) {
     const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/${path}`);
     const data = await response.json();
     const drinks = data.drinks[0];
-    const date = new Date();
 
     // create a list of ingredients with their measurements
     let cocktailIngredients = [];
