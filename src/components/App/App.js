@@ -11,6 +11,7 @@ function App() {
     const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/${path}`);
     const data = await response.json();
     const drinks = data.drinks[0];
+    const date = new Date();
 
     // create a list of ingredients with their measurements
     let cocktailIngredients = [];
@@ -56,7 +57,7 @@ function App() {
       {cocktails !== undefined && <DisplayCocktail cocktail={cocktails} />}
       </main>
       <footer>
-        <p className="pt-4 pb-2 text-center">All rights reserved 2022-23</p>
+        <p className="pt-4 pb-2 text-center">All rights reserved 2022-{date.getFullYear()}</p>
       </footer>
     </div>
   );
