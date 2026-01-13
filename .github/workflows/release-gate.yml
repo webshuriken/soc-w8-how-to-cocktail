@@ -1,0 +1,45 @@
+name: Build and Deploy to GH Pages
+
+on:
+  pull_request:
+    branches: [main, 'release/*']
+  push:
+    branches: [main] # This triggers the actual live deployment
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install and Test
+        run: |
+          npm ci
+          npm test
+
+      - name: Build Site
+        run: npm run build # Or whatever your build command is
+
+      - name: Upload artifact
+        if: github.ref == 'refs/heads/main' # Only upload for main branch
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist # The folder where your build output lives
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
