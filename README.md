@@ -3,6 +3,10 @@
 A cocktails recipe react app, do you want to create your next refreshing drink? look no further. Built for a School of Code Hackathon Friday.
 Visit live site [How to Cocktails](https://webshuriken.github.io/soc-w8-how-to-cocktail/)
 
+## Version
+
+Current version: `0.0.9`
+
 ## Features
 
 - Responsive
@@ -50,13 +54,13 @@ npm start
 
 ## API Reference
 
-#### Get a random cocktail
+### Get a random cocktail
 
 ```http
 GET /api/json/v1/1/random.php
 ```
 
-#### Search for specific cocktail
+### Search for specific cocktail
 
 ```http
 GET /api/json/v1/1/search.php?s=${text}
