@@ -122,4 +122,4 @@ I will start using tailwind in all my projects from now. This does not mean I wi
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](LICENSE)
