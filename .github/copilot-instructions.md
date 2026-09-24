@@ -18,11 +18,11 @@
 - Build production output: `npm run build`
 
 ## Application Structure
-- Entry point: `/home/runner/work/soc-w8-how-to-cocktail/soc-w8-how-to-cocktail/src/index.js`
-- Main app component: `/home/runner/work/soc-w8-how-to-cocktail/soc-w8-how-to-cocktail/src/components/App/App.js`
-- Search input component: `/home/runner/work/soc-w8-how-to-cocktail/soc-w8-how-to-cocktail/src/components/SearchByName/index.js`
-- Random drink trigger: `/home/runner/work/soc-w8-how-to-cocktail/soc-w8-how-to-cocktail/src/components/RandomSearch/index.js`
-- Drink display layout: `/home/runner/work/soc-w8-how-to-cocktail/soc-w8-how-to-cocktail/src/components/DisplayCocktail/index.js`
+- Entry point: `src/index.js`
+- Main app component: `src/components/App/App.js`
+- Search input component: `src/components/SearchByName/index.js`
+- Random drink trigger: `src/components/RandomSearch/index.js`
+- Drink display layout: `src/components/DisplayCocktail/index.js`
 - Styling entry: `/home/runner/work/soc-w8-how-to-cocktail/soc-w8-how-to-cocktail/src/index.css`
 - Tailwind theme: `/home/runner/work/soc-w8-how-to-cocktail/soc-w8-how-to-cocktail/tailwind.config.js`
 
